@@ -13,11 +13,9 @@ def read_data():
 
         else:
             data = pd.read_csv(df)
-
-
     root.destroy()
+    
 if __name__ == '__main__':
-
     root =tk.Tk()
     tk.Button(root, text='Open File', command = read_data).pack()
     root.geometry("150x150+400+200")
@@ -73,14 +71,12 @@ for i in range(0,N):
        F_Delta_Liquid=0
     
         # Factor 7-	Eq_offer 
-
     if (tempData['common_stock'].iloc[-1]-tempData['common_stock'].iloc[-2]) == 0:
        Eq_offer=1
     else: 
        Eq_offer=0
     
         # Factor 8-9  Delta margin  and Delta turnover
-
     margin= tempData['profit']/tempData['sales'];
     turnover=tempData['sales']/tempData['T-Asset'];
     Delta_margin=margin.iloc[-1]-margin.iloc[-2];
@@ -117,6 +113,8 @@ def save():
     if export_output.endswith('.xls') or export_output.endswith('.xlsx'):
         Final_outcome.to_excel (export_output, index = False, header=True)
     root.destroy()
+    
+    
     
 if __name__ == '__main__':
 
