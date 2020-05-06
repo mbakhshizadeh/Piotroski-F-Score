@@ -1,4 +1,4 @@
-# Piotroski-F-Score-
+# Piotroski-F-Score
 Determination of the best-performing stocks using Piotroski F-Score 
 Piotroski F-Score Rank model gives investors a ranking list of companies from top to bottom based on their performance in the current and last year. The important advantage of this method is that there is no need to have many data of the company (like startups). here, there needs onnly to have current and last year’s data (or quarters) to calculate the difference in the balance sheet components in the two sequential statements.
 To calculate measurements of Piotroski-F-Score, first, we need to pull out these variables from balance sheets and then put them into formulas.
